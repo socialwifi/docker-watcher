@@ -1,0 +1,3 @@
+docker
+eel[jinja2]
+pytest

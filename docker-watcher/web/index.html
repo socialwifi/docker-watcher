@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Docker Watcher</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="./bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./styles.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+  </head>
+  <body>
+    <div id="application">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-menu">
+          <div class="menu-elements"></div>
+        </div>
+      </nav>
+      <div class="logs">
+
+      </div>
+    </div>
+    <div id="widgets">
+
+        <!-- logs widget -->
+        <div class="log-box">
+          <div class="log-container">
+            <div class="log">
+
+            </div>
+            <div class="log-label">
+              <span>[container name]</span>
+              <div class="menu">
+                <button type="button" class="btn btn-danger btn-sm">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+
+        <!-- microservice dropdown -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                [service name]
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                [dropdown items]
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end -->
+
+    </div>
+    <script type="text/javascript" src="./bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./scripts.js"></script>
+  </body>
+</html>
