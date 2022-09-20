@@ -38,6 +38,17 @@ This should open a browser window (Chrome by default) with the application:
 Logs are streamed "live" via gevent sudo-threads. When a container is restarted watcher will try to find the new one and continue streaming.
 
 
+### Tests
+
+To run tests use `pytest`
+
+### Caveats and problems
+
+This tools uses Eel which lacks active maintainer (which results in multiple forks). It may have problems working with newer versions of Python.
+
+On top of that gevent monkey patching may result in unexpected behavior without clear exceptions give. A black box so don't rush with Eel to make production / critical applications ;)
+
+
 ### ToDo:
 
 * container restart button
